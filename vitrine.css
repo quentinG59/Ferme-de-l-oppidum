@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap");
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: url("./image/banner.jpg");
+  position: relative;
+  background-attachment: fixed;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid black;
+}
+nav h1 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}
+nav .onglets {
+  margin-top: 3px;
+  margin-left: 300px;
+}
+nav .onglets a {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+nav .onglets a:hover {
+  -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.parallax {
+  width: 100%;
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  color: black;
+}
+header h1 {
+  color: black;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 30px;
+}
+header h4 {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid whitesmoke;
+}
+header button {
+  border: 2px solid black;
+  padding: 10px 20px;
+  background: transparent;
+  color: black;
+  font-size: 20px;
+  font-family: "Playfair Display", sans-serif;
+  cursor: pointer;
+}
+header button:hover {
+  -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.main {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .content .card .right img {
+  height: 300px;
+  width: 400px;
+  margin-top: 5px;
+}
+.main .content .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.main .content .card .left {
+  font-family: "Zen Kaku Gothic New";
+  flex: 0 0 30%;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+.produit {
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  font-family: "Playfair Display", sans-serif;
+  cursor: pointer;
+}
+.produit:hover {
+  -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.main .content .card.right {
+  flex: 0 0 70%;
+}
+a {
+  font-weight: bold;
+  font-family: "Zen Kaku Gothic New";
+  color: white;
+  font-size: 20px;
+}
+footer {
+  margin-top: 40px;
+  border-top: 5px solid #6f6f6f;
+  background-color: black;
+  color: whitesmoke;
+  padding: 40px 100px;
+}
+footer h1 {
+  font-family: "Playfair Display", sans-serif;
+  border-bottom: 1px solid white;
+  width: 10%;
+  padding-bottom: 5px;
+}
+footer .services {
+  margin-top: -10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .services .service {
+  margin-right: 30px;
+  padding: 10px;
+}
+footer .services .service p {
+  max-width: 300px;
+}
+footer #contact {
+  color: rgb(181, 181, 181);
+}
+.logo-1 {
+  color: white;
+  font-size: 50px;
+  margin: 25px;
+}
+.logo-2 {
+  color: white;
+  font-size: 50px;
+  margin: 25px;
+}
+
+@media screen and (max-width: 680px) {
+  nav .onglets {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  .main .card {
+    margin: 10px;
+  }
+  .main .content .card .right img {
+    height: 200px;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .main .content .card {
+    display: block;
+  }
+  footer {
+    padding: 30px;
+  }
+}
