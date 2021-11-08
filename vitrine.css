@@ -18,8 +18,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  background: url("./image/banner.jpg");
   position: relative;
+}
+.background {
+  background: url("./image/banner.jpg");
   background-attachment: fixed;
 }
 nav {
@@ -50,10 +52,6 @@ nav .onglets a:hover {
     both;
   animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-.parallax {
-  width: 100%;
-  font-size: 2rem;
-}
 
 header {
   display: flex;
@@ -64,7 +62,6 @@ header {
 }
 header h1 {
   color: black;
-  font-family: "Zen Kaku Gothic New", sans-serif;
   font-size: 30px;
 }
 header h4 {
@@ -124,7 +121,9 @@ header button:hover {
     both;
   animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
+.content {
+  height: 100vh;
+}
 .main .content .card.right {
   flex: 0 0 70%;
 }
@@ -135,8 +134,6 @@ a {
   font-size: 20px;
 }
 footer {
-  margin-top: 40px;
-  border-top: 5px solid #6f6f6f;
   background-color: black;
   color: whitesmoke;
   padding: 40px 100px;
@@ -173,10 +170,19 @@ footer #contact {
   margin: 25px;
 }
 
-@media screen and (max-width: 680px) {
+/* Galerie Photos */
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+  }
+
   nav .onglets {
     margin-left: 0px;
     margin-bottom: 20px;
+  }
+  header h1 {
+    text-align: center;
   }
   .main .card {
     margin: 10px;
@@ -191,5 +197,8 @@ footer #contact {
   }
   footer {
     padding: 30px;
+  }
+  img {
+    object-fit: cover;
   }
 }
