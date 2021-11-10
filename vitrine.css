@@ -108,6 +108,16 @@ header button:hover {
   background-color: black;
   color: white;
 }
+.AOP {
+  height: 60px;
+  display: flex;
+}
+
+.img-aop {
+  display: flex;
+  justify-content: space-around;
+}
+
 .produit {
   padding: 10px 20px;
   background: transparent;
@@ -157,6 +167,12 @@ footer .services .service p {
 footer #contact {
   color: rgb(181, 181, 181);
 }
+.logo {
+  display: flex;
+  color: white;
+  font-size: 50px;
+  margin: 25px;
+}
 .logo-1 {
   color: white;
   font-size: 50px;
@@ -165,6 +181,12 @@ footer #contact {
 .logo-2 {
   color: white;
   font-size: 50px;
+  margin: 25px;
+}
+
+.logo-3 {
+  height: 50px;
+  color: white;
   margin: 25px;
 }
 
